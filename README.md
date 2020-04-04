@@ -14,5 +14,7 @@ The extension will refresh the page every 30 seconds and display a chrome notifi
 4. Turn on developer mode (toggle in the top right)
 5. Click "Load Unpacked" (button on the top left)
 6. Inside the extracted delivery-bot folder, select the folder "chrome_extension"
+7. Go to the prime now checkout page and accept the request for permissions to send notifications.
+Done!
 
 To verify the extension is running, go to the checkout page beginning with "https://primenow.amazon.com/checkout" and the developer console should say something like "Delivery bot is running: Sat Apr 04 2020 14:30:07 GMT-0700 (Pacific Daylight Time)"
