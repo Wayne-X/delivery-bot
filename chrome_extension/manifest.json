@@ -1,0 +1,14 @@
+  {
+    "name": "delivery_bot",
+    "manifest_version" : 2,
+    "version": "1",
+    "description": "Alert when primenow delivery windows are available.",
+	"content_scripts": [
+	  {
+	    "matches": [
+	      "https://primenow.amazon.com/checkout/enter-checkout*"
+	    ],
+	    "js": ["script.js"]
+	  }
+	]
+  }
