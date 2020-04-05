@@ -3,6 +3,7 @@ function main(){
   handlePermissions();
   if (deliveryAvailable()) {
     notifyDeliveryAvailable();
+    return;
   }
   reload();
 }
@@ -24,7 +25,7 @@ function notifyDeliveryAvailable() {
 function reload(){
   setTimeout(function() {
     location.reload();
-  }, 30000);
+  }, 60 * 1000 /* 60 seconds */);
 }
 
 main();
