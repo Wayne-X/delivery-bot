@@ -5,7 +5,7 @@ Chrome extension to notify when prime now delivery slots are available.
 1. In the Chrome browser with the extension installed, navigate to the checkout page beginning with "https://primenow.amazon.com/checkout"
 2. Leave the page open. It's fine to leave the page in the background.
 
-The extension will refresh the page every 30 seconds and display a chrome notification when a delivery slot is available.
+The extension will refresh the page every minute and display a chrome notification when a delivery slot is available.
 
 ## Installation Instructions
 1. Click "clone or download", then "download as zip"
