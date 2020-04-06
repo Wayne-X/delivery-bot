@@ -15,7 +15,11 @@ function handlePermissions(){
 }
 
 function deliveryAvailable() {
-  return document.documentElement.innerText.search("No delivery windows available") == -1;
+  return pageContains("Select Delivery Time") && !pageContains("No delivery windows available");
+}
+
+function pageContains(text) {
+  return document.documentElement.innerText.search(text) != -1;
 }
 
 function notifyDeliveryAvailable() {
