@@ -6,7 +6,8 @@
 	"content_scripts": [
 	  {
 	    "matches": [
-	      "https://primenow.amazon.com/checkout/enter-checkout*"
+	      "https://primenow.amazon.com/checkout/enter-checkout*", // Prime Now
+	      "https://www.amazon.com/gp/buy/shipoptionselect/*" // Amazon Fresh
 	    ],
 	    "js": ["script.js"]
 	  }

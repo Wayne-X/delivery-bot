@@ -1,10 +1,12 @@
 # delivery-bot
-Chrome extension to notify when prime now delivery slots are available.
+Chrome extension to notify when Prime Now or Amazon Fresh delivery slots are available.
 
 ![screenshot of delivery notification](https://i.imgur.com/obtyUXJ.png)
 
 ## Usage
-1. In the Chrome browser with the extension installed, navigate to the checkout page beginning with  "https://primenow.amazon.com/checkout". (open your cart, click checkout, fill in your infomation, etc)
+1. In the Chrome browser with the extension installed, navigate to the checkout page (open your cart, click checkout, fill in your infomation, etc)
+* for Prime Now, the checkout page should begin with <pre>primenow.amazon.com/checkout</pre>
+* for Amazon Fresh, the checkout page should begin with <pre>www.amazon.com/gp/buy/shipoptionselect</pre>
 2. Leave the page open. It's fine to leave the page in the background.
 
 The extension will refresh the page every minute and display a chrome notification when a delivery slot is available.
@@ -12,7 +14,7 @@ The extension will refresh the page every minute and display a chrome notificati
 ## Installation Instructions
 1. Click "clone or download", then "download as zip"
 2. Extract somewhere
-3. In Chrome, navigate to chrome://extensions/
+3. In Chrome, navigate to [chrome://extensions/](chrome://extensions/)
 4. Turn on developer mode (toggle in the top right)
 5. Click "Load Unpacked" (button on the top left)
 6. Inside the extracted delivery-bot folder, select the folder "chrome_extension"

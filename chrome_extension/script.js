@@ -15,7 +15,15 @@ function handlePermissions(){
 }
 
 function deliveryAvailable() {
-  return pageContains("Select Delivery Time") && !pageContains("No delivery windows available");
+  return deliverySectionLoaded() && slotsAvailable();
+}
+
+function deliverySectionLoaded() {
+  return pageContains("Select Delivery Time" /* Prime Now */) || pageContains("Select a time" /* Amazon Fresh */);
+}
+
+function slotsAvailable() {
+  return !pageContains("No delivery windows available");
 }
 
 function pageContains(text) {
